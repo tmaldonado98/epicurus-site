@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,6 +8,7 @@ html {
   border: 0;
   margin: 0;
   padding: 0;
+  font-family: 'Alegreya', serif;
 }
 
 #firstDiv {
@@ -15,7 +17,7 @@ html {
   width: 100%;
 }
 
-#firstDiv #background-img {
+#firstDiv #background-img1 {
   -o-object-fit: cover;
      object-fit: cover;
   position: fixed;
@@ -45,7 +47,6 @@ html {
   left: 0;
   margin-right: auto;
   height: 100vh;
-  z-index: 1;
 }
 
 #secondDiv {
@@ -56,7 +57,7 @@ html {
   background-image: linear-gradient(55deg, #af9f9f, rgba(85, 91, 101, 0.865));
 }
 
-#secondDiv #text-box1 {
+#text-box1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,62 +72,88 @@ html {
   width: auto;
 }
 
-#secondDiv #text-box1 #i-epic {
-  text-indent: 5rem;
+#text-box1 #i-epic {
+  text-indent: 10rem;
   opacity: 0;
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+  -webkit-transition-delay: 2000ms;
+          transition-delay: 2000ms;
 }
 
-#secondDiv #text-box1 #text1-div2 {
+#text-box1 #text1-div2 {
   padding-top: 10rem;
   margin-left: 5rem;
   opacity: 0;
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
 }
 
-#secondDiv #text1-div2, #secondDiv #text3-div2 {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+#text1-div2, #text2-div2, #i-epic {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 60px;
-  font-family: Merienda;
+  font-size: 70px;
+  font-weight: 590;
   text-shadow: 2px 2px rgba(214, 190, 190, 0.947);
 }
 
 #text-box2 {
-  float: right;
+  text-align: center;
   margin-bottom: 0;
 }
 
-#text-box2 #text3-div2 {
+#text-box2 #text2-div2 {
   padding-top: 40rem;
-  padding-right: 5rem;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  font-size: 80px;
   opacity: 0;
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+  -webkit-transition-delay: 4000ms;
+          transition-delay: 4000ms;
 }
 
-#secondDiv:hover #i-epic, #text-box1:hover #i-epic, #text-box2:hover #i-epic {
+#secondDiv:hover #text1-div2, #secondDiv:hover #i-epic, #secondDiv:hover #text2-div2, #secondDiv:hover #f1, #secondDiv:hover #f2, #secondDiv:hover #f3 {
   opacity: 1;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-delay: 4000ms;
-          animation-delay: 4000ms;
 }
 
-#secondDiv:hover #text1-div2, #text-box1:hover #text1-div2, #text-box2:hover #text1-div2 {
-  opacity: 1;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+#f1 {
+  position: absolute;
+  right: 80px;
+  top: 900px;
+  opacity: 0;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-delay: 1000ms;
+          transition-delay: 1000ms;
 }
 
-#secondDiv:hover #text3-div2, #text-box1:hover #text3-div2, #text-box2:hover #text3-div2 {
-  opacity: 1;
-  -webkit-animation-duration: 3000ms;
-          animation-duration: 3000ms;
+#f2 {
+  position: absolute;
+  width: 350px;
+  height: 420px;
+  top: 880px;
+  left: 700px;
+  opacity: 0;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-delay: 3000ms;
+          transition-delay: 3000ms;
+}
+
+#f3 {
+  position: absolute;
+  right: 500px;
+  top: 1000px;
+  opacity: 0;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-delay: 7000ms;
+          transition-delay: 7000ms;
 }
 
 #thirdDiv {
@@ -134,7 +161,23 @@ html {
           box-shadow: 20px 20px 50px 50px #b9b9b9;
   height: 100vh;
   width: 100%;
-  background-color: royalblue;
+}
+
+#thirdDiv #background-img2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+#thirdDiv #background-overlay2 {
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 #fourthDiv {
@@ -151,7 +194,7 @@ html {
   background-color: rgba(198, 186, 171, 0.465);
   -webkit-transition: 500ms;
   transition: 500ms;
-  float: left;
+  float: right;
   position: -webkit-sticky;
   position: sticky;
   margin-top: auto;
@@ -228,6 +271,8 @@ html {
   padding-top: 7px;
   -webkit-transition: 500ms;
   transition: 500ms;
+  border: 10px groove rgba(196, 188, 177, 0.505);
+  z-index: 10;
   opacity: 1;
 }
 

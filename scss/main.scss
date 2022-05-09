@@ -2,10 +2,13 @@ html {
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
 * {
     border: 0;
     margin: 0;
     padding: 0;
+    font-family: 'Alegreya', serif;
 }
 
 #firstDiv {
@@ -16,7 +19,7 @@ html {
    //box-shadow: 20px 20px 50px 50px rgb(187, 187, 187) inset;
     //box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
    //z-index:-1; 
-    #background-img {
+    #background-img1 {
         object-fit: cover;
         position: fixed;
         float: right;
@@ -41,7 +44,7 @@ html {
         left: 0;
         margin-right: auto;
         height: 100vh;
-        z-index: 1;
+        //z-index: 1;
     }
 }
 
@@ -51,7 +54,7 @@ html {
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(55deg, rgb(175, 159, 159), rgba(85, 91, 101, 0.865));
-    
+}   
     #text-box1{
         //background-color: rgba(225, 214, 199, 0.8);
         display: flex;
@@ -66,63 +69,106 @@ html {
         //height: 70%;
         width: auto;
         #i-epic {
-        text-indent: 5rem;
+        text-indent: 10rem;
         opacity: 0;
+        transition-duration: 1500ms;
+        transition-delay: 2000ms;
         }
         #text1-div2{
             padding-top: 10rem;
             margin-left: 5rem;
             opacity: 0;
+            transition-duration: 1500ms;
+            transition-delay: 500ms;
         }
     }
 
-    #text1-div2, #text3-div2{
-        max-width: fit-content;
+    #text1-div2, #text2-div2, #i-epic{
+        //max-width: fit-content;
         height: fit-content;
-        font-size: 60px;    
-        font-family: Merienda;
-        //font-weight: 59000;
+        font-size: 70px;    
+        //font-family: Merienda;
+        font-weight: 590;
         text-shadow: 2px 2px rgba(214, 190, 190, 0.947);
     }
-}
-
-#text-box2{
-    float: right;
-    margin-bottom: 0;
-    #text3-div2{
-        padding-top: 40rem;
-        padding-right: 5rem;
-        //padding-bottom: 5rem;
-        animation-delay: 3000ms;
-        opacity: 0;
+    #text-box2{
+        text-align: center;
+        margin-bottom: 0;
+        #text2-div2{
+            padding-top: 40rem;
+            margin-right: 5rem;
+            margin-left: 5rem;
+            //padding-bottom: 5rem;
+            font-size: 80px;
+            opacity: 0;
+            transition-duration: 1500ms;
+            transition-delay: 4000ms;
     }
 }
 
-#secondDiv:hover, #text-box1:hover, #text-box2:hover{
-    #i-epic {
+#secondDiv:hover{
+    #text1-div2, #i-epic, #text2-div2, #f1, #f2, #f3{
         opacity: 1;
-        animation-duration: 1000ms;
-        animation-delay: 4000ms;
-
-    }
-    #text1-div2{
-        opacity: 1;
-        animation-duration: 1000ms;
-        animation-delay: 1000ms;
-
-    }
-    #text3-div2{
-        opacity: 1;
-        animation-duration: 3000ms;
     }
 }
+
+#f1{
+    position: absolute;
+    //width: 250px;
+    //height: 320px;
+    right: 80px;
+    top: 900px;
+    opacity: 0;
+    transition-duration: 1000ms;
+    transition-delay: 1000ms;
+}
+
+#f2{
+    position: absolute;
+    width: 350px;
+    height: 420px;
+    top: 880px;
+    left: 700px;
+    opacity: 0;
+    transition-duration: 1000ms;
+    transition-delay: 3000ms;
+}
+
+#f3{
+    position: absolute;
+    //width: 250px;
+    //height: 320px;
+    //right: 80px;
+    right: 500px;
+    top: 1000px;
+    opacity: 0;
+    transition-duration: 1000ms;
+    transition-delay: 7000ms;
+}
+//
+
 
 #thirdDiv {
     //box-shadow: 20px 20px 50px 50px rgb(187, 187, 187) inset;
     box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
     height: 100vh;
     width: 100%;
-    background-color: royalblue; 
+    //background-color: royalblue;
+
+    #background-img2{
+        object-fit: cover;
+        height: 100vh;
+        width: 100%;
+        z-index: 0;
+        position: absolute;
+    }
+    #background-overlay2{
+        background-color: rgba(0, 0, 0, 0.45);
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
 }
 
 #fourthDiv{
@@ -144,7 +190,7 @@ html {
     height: 40px;
     background-color: rgba(198, 186, 171, 0.465);
     transition: 500ms;
-    float: left;
+    float: right;
     position: sticky;
     margin-top: auto;
     margin-bottom: auto;
@@ -153,6 +199,7 @@ html {
     .bar-arrow{
         width: 40px;
         height: 40px;
+        
     }
 }
 
@@ -200,6 +247,8 @@ html {
     left: 0;
     padding-top: 7px;
     transition: 500ms;
+    border: 10px groove rgba(196, 188, 177, 0.505);
+    z-index: 10;
     opacity: 1;
     .contactBar {
         opacity: 1;
