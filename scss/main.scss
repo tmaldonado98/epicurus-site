@@ -9,11 +9,12 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Alegreya', serif;
+    overflow-x: hidden;
 }
 
 #firstDiv {
     //background-image: url(../images/garden1.jpg);
-   background-size: cover;
+   //background-size: cover;
    height: 100vh;
    width: 100%;
    //box-shadow: 20px 20px 50px 50px rgb(187, 187, 187) inset;
@@ -22,13 +23,13 @@ html {
     #background-img1 {
         object-fit: cover;
         position: fixed;
-        float: right;
+        //float: right;
         /*left: 0;
         right: 0;
         top: 0;
         bottom: 0;*/
         height: 100vh;
-        width: fit-content;
+        width: 100%;
         z-index: -11;
     }
     .background-overlay {
@@ -44,16 +45,17 @@ html {
         left: 0;
         margin-right: auto;
         height: 100vh;
-        //z-index: 1;
+        z-index: -1;
     }
 }
 
 #secondDiv {
     //box-shadow: 0px 20px 20px rgb(187, 187, 187) inset;
-    box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
+    box-shadow: 20px 20px 50px 50px rgb(194, 194, 194);
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(55deg, rgb(175, 159, 159), rgba(85, 91, 101, 0.865));
+    background-image: linear-gradient(55deg, rgb(175, 159, 159), rgb(85, 91, 101));
+    z-index: 1;
 }   
     #text-box1{
         //background-color: rgba(225, 214, 199, 0.8);
@@ -127,11 +129,11 @@ html {
     position: absolute;
     width: 350px;
     height: 420px;
-    top: 880px;
+    top: 950px;
     left: 700px;
     opacity: 0;
     transition-duration: 1000ms;
-    transition-delay: 3000ms;
+    transition-delay: 4000ms;
 }
 
 #f3{
@@ -153,7 +155,6 @@ html {
     box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
     height: 100vh;
     width: 100%;
-    //background-color: royalblue;
 
     #background-img2{
         object-fit: cover;
@@ -169,14 +170,96 @@ html {
         height: 100vh;
         position: relative;
     }
+    #flex-text-box{
+        position: absolute;
+        top: 1950px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        z-index: 15;
+        right: 5rem;
+        
+        .text-box{
+            display: flex;
+            font-size: 40px;
+            border: 2px solid rgba(255, 255, 255, 0.163);
+            margin-top: 45px;
+            padding: 1.5rem;
+            text-align: center;
+            a{
+            text-decoration: none;
+            width: 100%;
+                        color: antiquewhite;
+
+            }
+            p{
+                
+                text-decoration: none;
+            }
+        }
+        .text-box:hover{
+            background-color: antiquewhite;
+            transition-duration: 500ms;
+            color: rgb(52, 52, 55);
+            border: none;
+            box-shadow:10px 10px 50px 40px rgb(185, 185, 185);
+        }
+    }
 }
+
 
 #fourthDiv{
     box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
-    height: 70vh;
+    height: 120vh;
     width: 100%;
     background-color: black;
+    position: absolute;
 }
+    #back-to-top{
+        width: 40px;
+        height: 40px;
+        background-color: rgba(198, 186, 171, 0.465);
+        //float: left;
+        left: 0;
+        position: sticky;
+        //margin-top: auto;
+        //margin-bottom: auto;
+        top: 50%;
+        opacity: 1;
+        //z-index: 15;
+        }
+        #up-arrow{
+            width: 40px;
+            height: 40px;
+        }
+
+
+    #text-content {
+        position: relative;
+        //top: 0;
+        width: 60%;
+        align-self: center;
+        margin: auto;
+        padding: 5rem;
+        color: antiquewhite;
+
+        #p-header{
+            font-size: 75px;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        .p-content {
+            font-size: 40px;
+            padding-left: 15rem;
+        }
+    }
+
+    #my-pic {
+        position: absolute;
+        top:3200px
+    }
+
+
 //
 
 
@@ -204,7 +287,6 @@ html {
 }
 
 .contactBar {
-    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,7 +294,7 @@ html {
     width: fit-content;
     height: auto;
     //position: sticky;
-    left: 0;
+    //left: 0;
     //text-align: right;
     //padding-top: 7px;
     transition: 500ms;
@@ -248,7 +330,7 @@ html {
     padding-top: 7px;
     transition: 500ms;
     border: 10px groove rgba(196, 188, 177, 0.505);
-    z-index: 10;
+    //z-index: 10;
     opacity: 1;
     .contactBar {
         opacity: 1;
@@ -277,6 +359,7 @@ html {
   }
 
   footer {
+    position: relative;
     display: flex;
     background-color: #1F2937;
     color: white;

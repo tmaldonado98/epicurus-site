@@ -9,10 +9,10 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Alegreya', serif;
+  overflow-x: hidden;
 }
 
 #firstDiv {
-  background-size: cover;
   height: 100vh;
   width: 100%;
 }
@@ -21,15 +21,12 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
   position: fixed;
-  float: right;
   /*left: 0;
         right: 0;
         top: 0;
         bottom: 0;*/
   height: 100vh;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   z-index: -11;
 }
 
@@ -47,14 +44,16 @@ html {
   left: 0;
   margin-right: auto;
   height: 100vh;
+  z-index: -1;
 }
 
 #secondDiv {
-  -webkit-box-shadow: 20px 20px 50px 50px #b9b9b9;
-          box-shadow: 20px 20px 50px 50px #b9b9b9;
+  -webkit-box-shadow: 20px 20px 50px 50px #c2c2c2;
+          box-shadow: 20px 20px 50px 50px #c2c2c2;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(55deg, #af9f9f, rgba(85, 91, 101, 0.865));
+  background-image: linear-gradient(55deg, #af9f9f, #555b65);
+  z-index: 1;
 }
 
 #text-box1 {
@@ -136,13 +135,13 @@ html {
   position: absolute;
   width: 350px;
   height: 420px;
-  top: 880px;
+  top: 950px;
   left: 700px;
   opacity: 0;
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
-  -webkit-transition-delay: 3000ms;
-          transition-delay: 3000ms;
+  -webkit-transition-delay: 4000ms;
+          transition-delay: 4000ms;
 }
 
 #f3 {
@@ -180,12 +179,104 @@ html {
   position: relative;
 }
 
+#thirdDiv #flex-text-box {
+  position: absolute;
+  top: 1950px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 15;
+  right: 5rem;
+}
+
+#thirdDiv #flex-text-box .text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.163);
+  margin-top: 45px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#thirdDiv #flex-text-box .text-box a {
+  text-decoration: none;
+  width: 100%;
+  color: antiquewhite;
+}
+
+#thirdDiv #flex-text-box .text-box p {
+  text-decoration: none;
+}
+
+#thirdDiv #flex-text-box .text-box:hover {
+  background-color: antiquewhite;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  color: #343437;
+  border: none;
+  -webkit-box-shadow: 10px 10px 50px 40px #b9b9b9;
+          box-shadow: 10px 10px 50px 40px #b9b9b9;
+}
+
 #fourthDiv {
   -webkit-box-shadow: 20px 20px 50px 50px #b9b9b9;
           box-shadow: 20px 20px 50px 50px #b9b9b9;
-  height: 70vh;
+  height: 120vh;
   width: 100%;
   background-color: black;
+  position: absolute;
+}
+
+#back-to-top {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(198, 186, 171, 0.465);
+  left: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50%;
+  opacity: 1;
+}
+
+#up-arrow {
+  width: 40px;
+  height: 40px;
+}
+
+#text-content {
+  position: relative;
+  width: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: auto;
+  padding: 5rem;
+  color: antiquewhite;
+}
+
+#text-content #p-header {
+  font-size: 75px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+#text-content .p-content {
+  font-size: 40px;
+  padding-left: 15rem;
+}
+
+#my-pic {
+  position: absolute;
+  top: 3200px;
 }
 
 .barShrunk {
@@ -209,7 +300,6 @@ html {
 }
 
 .contactBar {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,7 +317,6 @@ html {
   width: -moz-fit-content;
   width: fit-content;
   height: auto;
-  left: 0;
   -webkit-transition: 500ms;
   transition: 500ms;
   opacity: 0;
@@ -272,7 +361,6 @@ html {
   -webkit-transition: 500ms;
   transition: 500ms;
   border: 10px groove rgba(196, 188, 177, 0.505);
-  z-index: 10;
   opacity: 1;
 }
 
@@ -303,6 +391,7 @@ html {
 }
 
 footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
