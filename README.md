@@ -1,4 +1,5 @@
 This is a biographical/resume website for the ancient Greek philosopher Epicurus.
+See the site at: https://tmaldonado98.github.io/epicurus-site/
 
 What I aim to learn with this project:
 - neon buttons with reflection upon button hover
@@ -9,3 +10,6 @@ What I aim to learn with this project:
 - background/section slideshow of images
 - responsive design for mobile devices
 - get a domain & website name, if possible
+
+What I've Learned:
+-
