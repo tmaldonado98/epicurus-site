@@ -20,9 +20,10 @@ html {
    //box-shadow: 20px 20px 50px 50px rgb(187, 187, 187) inset;
     //box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
    //z-index:-1; 
-    #background-img1 {
+   background-attachment: fixed;
+    #background-video {
         object-fit: cover;
-        position: fixed;
+        position: absolute;
         //float: right;
         /*left: 0;
         right: 0;
@@ -45,7 +46,7 @@ html {
         left: 0;
         margin-right: auto;
         height: 100vh;
-        z-index: -1;
+        z-index: -11;
     }
 }
 
@@ -54,7 +55,8 @@ html {
     box-shadow: 20px 20px 50px 50px rgb(194, 194, 194);
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(55deg, rgb(175, 159, 159), rgb(85, 91, 101));
+    background-color: black;
+    background-image: linear-gradient(55deg, rgba(186, 186, 186, 0.557), rgba(85, 91, 101, 0.505));
     z-index: 1;
 }   
     #text-box1{
@@ -74,7 +76,7 @@ html {
         text-indent: 10rem;
         opacity: 0;
         transition-duration: 1500ms;
-        transition-delay: 2000ms;
+        transition-delay: 1500ms;
         }
         #text1-div2{
             padding-top: 10rem;
@@ -86,12 +88,11 @@ html {
     }
 
     #text1-div2, #text2-div2, #i-epic{
-        //max-width: fit-content;
         height: fit-content;
         font-size: 70px;    
-        //font-family: Merienda;
         font-weight: 590;
-        text-shadow: 2px 2px rgba(214, 190, 190, 0.947);
+        color: rgb(184, 184, 184);
+        text-shadow: 4px 4px rgba(0, 0, 0, 0.947);
     }
     #text-box2{
         text-align: center;
@@ -104,49 +105,27 @@ html {
             font-size: 80px;
             opacity: 0;
             transition-duration: 1500ms;
-            transition-delay: 4000ms;
+            transition-delay: 3000ms;
     }
 }
 
 #secondDiv:hover{
-    #text1-div2, #i-epic, #text2-div2, #f1, #f2, #f3{
+    #text1-div2, #i-epic, #text2-div2{
         opacity: 1;
     }
 }
 
-#f1{
-    position: absolute;
-    //width: 250px;
-    //height: 320px;
-    right: 80px;
-    top: 900px;
-    opacity: 0;
-    transition-duration: 1000ms;
-    transition-delay: 1000ms;
-}
-
 #f2{
     position: absolute;
-    width: 350px;
-    height: 420px;
-    top: 950px;
-    left: 700px;
-    opacity: 0;
+    width: 50rem;
+    height: auto;
+    top: 1000px;
+    left: 900px;
+    opacity: 1;
     transition-duration: 1000ms;
-    transition-delay: 4000ms;
+    transition-delay: 1500ms;
 }
 
-#f3{
-    position: absolute;
-    //width: 250px;
-    //height: 320px;
-    //right: 80px;
-    right: 500px;
-    top: 1000px;
-    opacity: 0;
-    transition-duration: 1000ms;
-    transition-delay: 7000ms;
-}
 //
 
 
@@ -155,6 +134,7 @@ html {
     box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
     height: 100vh;
     width: 100%;
+    background-attachment: fixed;
 
     #background-img2{
         object-fit: cover;
@@ -218,6 +198,7 @@ html {
     width: 100%;
     background-color: black;
     position: absolute;
+    z-index: 10;
 }
     #back-to-top{
         width: 40px;
@@ -266,7 +247,7 @@ html {
         align-items: center;
         justify-content: center;
         position: absolute;
-        left: 2rem;
+        left: 5rem;
         top:2950px;
 
     }
@@ -357,7 +338,7 @@ html {
     padding-top: 7px;
     transition: 500ms;
     border: 10px groove rgba(196, 188, 177, 0.505);
-    //z-index: 10;
+    z-index: 10;
     opacity: 1;
     overflow-x: visible;
     .contactBar {

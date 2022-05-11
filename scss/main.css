@@ -15,12 +15,13 @@ html {
 #firstDiv {
   height: 100vh;
   width: 100%;
+  background-attachment: fixed;
 }
 
-#firstDiv #background-img1 {
+#firstDiv #background-video {
   -o-object-fit: cover;
      object-fit: cover;
-  position: fixed;
+  position: absolute;
   /*left: 0;
         right: 0;
         top: 0;
@@ -44,7 +45,7 @@ html {
   left: 0;
   margin-right: auto;
   height: 100vh;
-  z-index: -1;
+  z-index: -11;
 }
 
 #secondDiv {
@@ -52,7 +53,8 @@ html {
           box-shadow: 20px 20px 50px 50px #c2c2c2;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(55deg, #af9f9f, #555b65);
+  background-color: black;
+  background-image: linear-gradient(55deg, rgba(186, 186, 186, 0.557), rgba(85, 91, 101, 0.505));
   z-index: 1;
 }
 
@@ -76,8 +78,8 @@ html {
   opacity: 0;
   -webkit-transition-duration: 1500ms;
           transition-duration: 1500ms;
-  -webkit-transition-delay: 2000ms;
-          transition-delay: 2000ms;
+  -webkit-transition-delay: 1500ms;
+          transition-delay: 1500ms;
 }
 
 #text-box1 #text1-div2 {
@@ -96,7 +98,8 @@ html {
   height: fit-content;
   font-size: 70px;
   font-weight: 590;
-  text-shadow: 2px 2px rgba(214, 190, 190, 0.947);
+  color: #b8b8b8;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.947);
 }
 
 #text-box2 {
@@ -112,47 +115,25 @@ html {
   opacity: 0;
   -webkit-transition-duration: 1500ms;
           transition-duration: 1500ms;
-  -webkit-transition-delay: 4000ms;
-          transition-delay: 4000ms;
+  -webkit-transition-delay: 3000ms;
+          transition-delay: 3000ms;
 }
 
-#secondDiv:hover #text1-div2, #secondDiv:hover #i-epic, #secondDiv:hover #text2-div2, #secondDiv:hover #f1, #secondDiv:hover #f2, #secondDiv:hover #f3 {
+#secondDiv:hover #text1-div2, #secondDiv:hover #i-epic, #secondDiv:hover #text2-div2 {
   opacity: 1;
-}
-
-#f1 {
-  position: absolute;
-  right: 80px;
-  top: 900px;
-  opacity: 0;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
-  -webkit-transition-delay: 1000ms;
-          transition-delay: 1000ms;
 }
 
 #f2 {
   position: absolute;
-  width: 350px;
-  height: 420px;
-  top: 950px;
-  left: 700px;
-  opacity: 0;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
-  -webkit-transition-delay: 4000ms;
-          transition-delay: 4000ms;
-}
-
-#f3 {
-  position: absolute;
-  right: 500px;
+  width: 50rem;
+  height: auto;
   top: 1000px;
-  opacity: 0;
+  left: 900px;
+  opacity: 1;
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
-  -webkit-transition-delay: 7000ms;
-          transition-delay: 7000ms;
+  -webkit-transition-delay: 1500ms;
+          transition-delay: 1500ms;
 }
 
 #thirdDiv {
@@ -160,6 +141,7 @@ html {
           box-shadow: 20px 20px 50px 50px #b9b9b9;
   height: 100vh;
   width: 100%;
+  background-attachment: fixed;
 }
 
 #thirdDiv #background-img2 {
@@ -236,6 +218,7 @@ html {
   width: 100%;
   background-color: black;
   position: absolute;
+  z-index: 10;
 }
 
 #back-to-top {
@@ -292,7 +275,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  left: 2rem;
+  left: 5rem;
   top: 2950px;
 }
 
@@ -388,6 +371,7 @@ html {
   -webkit-transition: 500ms;
   transition: 500ms;
   border: 10px groove rgba(196, 188, 177, 0.505);
+  z-index: 10;
   opacity: 1;
   overflow-x: visible;
 }
