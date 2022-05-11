@@ -194,6 +194,7 @@ html {
   height: fit-content;
   z-index: 15;
   right: 5rem;
+  overflow-x: visible;
 }
 
 #thirdDiv #flex-text-box .text-box {
@@ -203,6 +204,8 @@ html {
   font-size: 40px;
   border: 2px solid rgba(255, 255, 255, 0.163);
   margin-top: 45px;
+  margin-left: 50px;
+  margin-right: 50px;
   padding: 1.5rem;
   text-align: center;
 }
@@ -213,18 +216,17 @@ html {
   color: antiquewhite;
 }
 
-#thirdDiv #flex-text-box .text-box p {
-  text-decoration: none;
-}
-
 #thirdDiv #flex-text-box .text-box:hover {
   background-color: antiquewhite;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
-  color: #343437;
   border: none;
   -webkit-box-shadow: 10px 10px 50px 40px #b9b9b9;
           box-shadow: 10px 10px 50px 40px #b9b9b9;
+}
+
+#thirdDiv #flex-text-box .text-box:hover a {
+  color: #343437;
 }
 
 #fourthDiv {
@@ -245,6 +247,7 @@ html {
   position: sticky;
   top: 50%;
   opacity: 1;
+  overflow-x: visible;
 }
 
 #up-arrow {
@@ -274,9 +277,34 @@ html {
   padding-left: 15rem;
 }
 
-#my-pic {
+#pic-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
-  top: 3200px;
+  left: 2rem;
+  top: 2950px;
+}
+
+#epic-pic {
+  height: 400px;
+  width: 400px;
+}
+
+#my-pic {
+  height: 400px;
+  width: 320px;
+  border-radius: 100px;
 }
 
 .barShrunk {
@@ -292,6 +320,7 @@ html {
   margin-bottom: auto;
   top: 50%;
   opacity: 1;
+  overflow-x: visible;
 }
 
 .barShrunk .bar-arrow {
@@ -342,7 +371,6 @@ html {
   width: 17rem;
   height: 50vh;
   background-color: rgba(202, 202, 202, 0.756);
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,20 +384,22 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  left: 0;
   padding-top: 7px;
   -webkit-transition: 500ms;
   transition: 500ms;
   border: 10px groove rgba(196, 188, 177, 0.505);
   opacity: 1;
+  overflow-x: visible;
 }
 
 .barShrunk:hover .contactBar {
   opacity: 1;
+  overflow-x: visible;
 }
 
 .barShrunk:hover .bar-arrow {
   opacity: 0;
+  overflow-x: visible;
 }
 
 @media only screen and (max-width: 800px) {

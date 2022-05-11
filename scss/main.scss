@@ -178,32 +178,36 @@ html {
         height: fit-content;
         z-index: 15;
         right: 5rem;
-        
+        overflow-x: visible;
         .text-box{
             display: flex;
             font-size: 40px;
             border: 2px solid rgba(255, 255, 255, 0.163);
             margin-top: 45px;
+            margin-left: 50px;
+            margin-right: 50px;
             padding: 1.5rem;
             text-align: center;
+            
             a{
             text-decoration: none;
             width: 100%;
-                        color: antiquewhite;
+            color: antiquewhite;
 
             }
-            p{
-                
-                text-decoration: none;
-            }
         }
+
         .text-box:hover{
             background-color: antiquewhite;
             transition-duration: 500ms;
-            color: rgb(52, 52, 55);
             border: none;
             box-shadow:10px 10px 50px 40px rgb(185, 185, 185);
+            
+            a{
+                color: rgb(52, 52, 55);
+            }
         }
+        
     }
 }
 
@@ -227,6 +231,8 @@ html {
         top: 50%;
         opacity: 1;
         //z-index: 15;
+        overflow-x: visible;
+
         }
         #up-arrow{
             width: 40px;
@@ -254,12 +260,32 @@ html {
         }
     }
 
-    #my-pic {
+    #pic-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        top:3200px
+        left: 2rem;
+        top:2950px;
+
     }
 
+    #epic-pic {
+       // position: absolute;
+        //top:2950px;
+        height: 400px;
+        width: 400px;
+    }
 
+    #my-pic {
+        //position: absolute;
+        //top:3350px;
+       // left: 5rem;
+        height: 400px;
+        width: 320px;
+        border-radius: 100px;
+    }
 //
 
 
@@ -279,6 +305,7 @@ html {
     margin-bottom: auto;
     top: 50%;
     opacity: 1;
+    overflow-x: visible;
     .bar-arrow{
         width: 40px;
         height: 40px;
@@ -321,22 +348,25 @@ html {
     width: 17rem;
     height: 50vh;
     background-color: rgba(202, 202, 202, 0.756);
-    list-style: none;
+    //list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    left: 0;
+    //left: 0;
     padding-top: 7px;
     transition: 500ms;
     border: 10px groove rgba(196, 188, 177, 0.505);
     //z-index: 10;
     opacity: 1;
+    overflow-x: visible;
     .contactBar {
         opacity: 1;
+        overflow-x: visible;
     }
     .bar-arrow{
         opacity: 0;
+        overflow-x: visible;
     }
 }
 
