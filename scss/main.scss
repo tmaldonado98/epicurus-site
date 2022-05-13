@@ -56,7 +56,7 @@ html {
     height: 100vh;
     width: 100%;
     background-color: black;
-    background-image: linear-gradient(55deg, rgba(186, 186, 186, 0.557), rgba(85, 91, 101, 0.505));
+    background-image: linear-gradient(55deg, rgba(186, 186, 186, 0.419), rgba(118, 118, 118, 0.346));
     z-index: 1;
 }   
     #text-box1{
@@ -64,7 +64,7 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        position: absolute;
+        position: relative;
         //top: 62rem;
         //padding-top: 12rem;
         //padding-bottom: 12rem;
@@ -72,6 +72,7 @@ html {
         //margin-right: auto;
         //height: 70%;
         width: auto;
+        text-align: justify;
         #i-epic {
         text-indent: 10rem;
         opacity: 0;
@@ -85,20 +86,9 @@ html {
             transition-duration: 1500ms;
             transition-delay: 500ms;
         }
-    }
-
-    #text1-div2, #text2-div2, #i-epic{
-        height: fit-content;
-        font-size: 70px;    
-        font-weight: 590;
-        color: rgb(184, 184, 184);
-        text-shadow: 4px 4px rgba(0, 0, 0, 0.947);
-    }
-    #text-box2{
-        text-align: center;
-        margin-bottom: 0;
         #text2-div2{
-            padding-top: 40rem;
+            text-align: center;
+            margin-top: 11rem;
             margin-right: 5rem;
             margin-left: 5rem;
             //padding-bottom: 5rem;
@@ -106,8 +96,24 @@ html {
             opacity: 0;
             transition-duration: 1500ms;
             transition-delay: 3000ms;
+        }
     }
-}
+
+    #text1-div2, #text2-div2, #i-epic{
+        height: fit-content;
+        font-size: 10ch;    
+        font-weight: 590;
+        color: rgb(203, 203, 203);
+        text-shadow: 4px 4px rgba(0, 0, 0, 0.947);
+    }
+    /*#text-box2{
+        text-align: center;
+        margin-bottom: 0;
+        position: absolute;
+        top: 100rem;
+        width: 100%;
+        
+}*/
 
 #secondDiv:hover{
     #text1-div2, #i-epic, #text2-div2{
@@ -115,12 +121,13 @@ html {
     }
 }
 
-#f2{
+#flower{
     position: absolute;
-    width: 50rem;
+    width: 45vw;
     height: auto;
-    top: 1000px;
-    left: 900px;
+    right: 0;
+    margin-top: 10vh;
+    margin-right: 14vw;
     opacity: 1;
     transition-duration: 1000ms;
     transition-delay: 1500ms;
@@ -134,7 +141,7 @@ html {
     box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
     height: 100vh;
     width: 100%;
-    background-attachment: fixed;
+    //background-attachment: fixed;
 
     #background-img2{
         object-fit: cover;
@@ -148,25 +155,28 @@ html {
         z-index: 1;
         width: 100%;
         height: 100vh;
-        position: relative;
+        position: absolute;
     }
     #flex-text-box{
-        position: absolute;
-        top: 1950px;
+        position: relative;
+        width: 42vw;
+        //top: 1950px;
+        float: right;
         display: flex;
         flex-direction: column;
         height: fit-content;
         z-index: 15;
-        right: 5rem;
+        right: 8vw;
+        margin-top: 10vh;
         overflow-x: visible;
         .text-box{
             display: flex;
             font-size: 40px;
             border: 2px solid rgba(255, 255, 255, 0.163);
             margin-top: 45px;
-            margin-left: 50px;
-            margin-right: 50px;
-            padding: 1.5rem;
+            //margin-left: 50px;
+            //margin-right: 50px;
+            padding: 1rem;
             text-align: center;
             
             a{
@@ -193,12 +203,12 @@ html {
 
 
 #fourthDiv{
-    box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
-    height: 120vh;
+    //box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
+    height: 110vh;
     width: 100%;
     background-color: black;
     position: absolute;
-    z-index: 10;
+    overflow: visible;
 }
     #back-to-top{
         width: 40px;
@@ -223,20 +233,26 @@ html {
 
     #text-content {
         position: relative;
-        //top: 0;
-        width: 60%;
-        align-self: center;
-        margin: auto;
+        left: -8rem;
+        width: 66%;
+        height: auto;
+        //align-self: center;
+        margin-top: 0;
         padding: 5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 4rem;
         color: antiquewhite;
+        z-index: 15;
 
         #p-header{
-            font-size: 75px;
+            //font-size: 10ch;
+            font-size: 4.5vw;
             font-weight: 700;
             margin-bottom: 2rem;
         }
         .p-content {
-            font-size: 40px;
+//            font-size: 4.6ch;
+            font-size: 2.2vw;
             padding-left: 15rem;
         }
     }
@@ -246,33 +262,33 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        left: 5rem;
-        top:2950px;
-
+        position: relative;
+        float: left;
+        top: 22vh;
+        left: 5vw;
+        //top:2925px;
+        z-index: 20;
     }
 
     #epic-pic {
        // position: absolute;
         //top:2950px;
-        height: 400px;
-        width: 400px;
+        height: 40vh;
+        width: 20vw;
+
     }
 
     #my-pic {
         //position: absolute;
         //top:3350px;
        // left: 5rem;
-        height: 400px;
-        width: 320px;
+        //height: 400px;
+        height: 40vh;
+        width: 15vw;
+        //width: 320px;
         border-radius: 100px;
     }
 //
-
-
-
-
-
 
 //
 .barShrunk {
@@ -282,8 +298,6 @@ html {
     transition: 500ms;
     float: right;
     position: sticky;
-    margin-top: auto;
-    margin-bottom: auto;
     top: 50%;
     opacity: 1;
     overflow-x: visible;
@@ -326,8 +340,8 @@ html {
 .barShrunk:hover {
     padding: 0;
     margin: 0;
-    width: 17rem;
-    height: 50vh;
+    width: 15%;
+    height: 50%;
     background-color: rgba(202, 202, 202, 0.756);
     //list-style: none;
     display: flex;
@@ -370,13 +384,14 @@ html {
   }
 
   footer {
-    position: relative;
+    position: static;
     display: flex;
     background-color: #1F2937;
     color: white;
     height: 100px;
     font-size: 16px;
     font-weight: bold;
+    z-index: 29;
 }
 
 footer p {
