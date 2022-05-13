@@ -243,7 +243,7 @@ html {
 
 #text-content {
   position: relative;
-  left: -8rem;
+  left: -12.5rem;
   width: 66%;
   height: auto;
   margin-top: 0;
@@ -282,7 +282,7 @@ html {
   position: relative;
   float: left;
   top: 22vh;
-  left: 5vw;
+  left: 2.5vw;
   z-index: 20;
 }
 
@@ -293,7 +293,7 @@ html {
 
 #my-pic {
   height: 40vh;
-  width: 15vw;
+  width: 25vw;
   border-radius: 100px;
 }
 
