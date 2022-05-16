@@ -310,7 +310,7 @@ html {
   position: sticky;
   top: 50%;
   opacity: 1;
-  overflow-x: visible;
+  overflow-y: hidden;
 }
 
 .barShrunk .bar-arrow {
@@ -353,6 +353,10 @@ html {
 
 .contactBar .contactBar .text {
   top: -1rem;
+}
+
+.contactBar .text {
+  margin-bottom: 1rem;
 }
 
 .barShrunk:hover {

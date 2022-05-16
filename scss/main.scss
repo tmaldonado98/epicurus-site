@@ -302,7 +302,8 @@ html {
     position: sticky;
     top: 50%;
     opacity: 1;
-    overflow-x: visible;
+    //overflow-x: visible;
+    overflow-y: hidden;
     .bar-arrow{
         width: 40px;
         height: 40px;
@@ -336,6 +337,10 @@ html {
         //position: relative;
         top: -1rem;
         //font-family: x;
+      }
+
+      .text {
+          margin-bottom: 1rem;
       }
 }
 
