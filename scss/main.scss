@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
@@ -101,7 +102,7 @@ html {
 
     #text1-div2, #text2-div2, #i-epic{
         height: fit-content;
-        font-size: 10ch;    
+        font-size: 7.5rem;    
         font-weight: 590;
         color: rgb(203, 203, 203);
         text-shadow: 4px 4px rgba(0, 0, 0, 0.947);
