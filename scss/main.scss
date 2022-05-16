@@ -79,6 +79,7 @@ html {
         opacity: 0;
         transition-duration: 1500ms;
         transition-delay: 1500ms;
+        font-size: 5rem;    
         }
         #text1-div2{
             padding-top: 10rem;
@@ -86,6 +87,7 @@ html {
             opacity: 0;
             transition-duration: 1500ms;
             transition-delay: 500ms;
+            font-size: 5rem;    
         }
         #text2-div2{
             text-align: center;
@@ -93,7 +95,7 @@ html {
             margin-right: 5rem;
             margin-left: 5rem;
             //padding-bottom: 5rem;
-            font-size: 80px;
+            font-size: 6rem;
             opacity: 0;
             transition-duration: 1500ms;
             transition-delay: 3000ms;
@@ -102,7 +104,6 @@ html {
 
     #text1-div2, #text2-div2, #i-epic{
         height: fit-content;
-        font-size: 7.5rem;    
         font-weight: 590;
         color: rgb(203, 203, 203);
         text-shadow: 4px 4px rgba(0, 0, 0, 0.947);
@@ -172,7 +173,7 @@ html {
         overflow-x: visible;
         .text-box{
             display: flex;
-            font-size: 40px;
+            font-size: 3rem;
             border: 2px solid rgba(255, 255, 255, 0.163);
             margin-top: 45px;
             //margin-left: 50px;
