@@ -339,7 +339,7 @@ html {
   -webkit-transition: 500ms;
   transition: 500ms;
   opacity: 0;
-  font-size: 25px;
+  font-size: 1.7rem;
 }
 
 .contactBar .text, .contactBar .github, .contactBar .email, .contactBar .ig {
