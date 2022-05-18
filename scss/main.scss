@@ -10,7 +10,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Alegreya', serif;
-    overflow-x: hidden;
+    //overflow-x: hidden;
 }
 
 #firstDiv {
@@ -59,7 +59,9 @@ html {
     background-color: black;
     background-image: linear-gradient(55deg, rgba(186, 186, 186, 0.419), rgba(118, 118, 118, 0.346));
     z-index: 1;
-}   
+}
+
+   
     #text-box1{
         //background-color: rgba(225, 214, 199, 0.8);
         display: flex;
@@ -76,7 +78,7 @@ html {
         text-align: justify;
         #i-epic {
         text-indent: 10rem;
-        opacity: 0;
+        //opacity: 0;
         transition-duration: 1500ms;
         transition-delay: 1500ms;
         font-size: 5rem;    
@@ -84,7 +86,7 @@ html {
         #text1-div2{
             padding-top: 10rem;
             margin-left: 5rem;
-            opacity: 0;
+            //opacity: 0;
             transition-duration: 1500ms;
             transition-delay: 500ms;
             font-size: 5rem;    
@@ -96,7 +98,7 @@ html {
             margin-left: 5rem;
             //padding-bottom: 5rem;
             font-size: 6rem;
-            opacity: 0;
+            //opacity: 0;
             transition-duration: 1500ms;
             transition-delay: 3000ms;
         }
@@ -115,13 +117,7 @@ html {
         top: 100rem;
         width: 100%;
         
-}*/
-
-#secondDiv:hover{
-    #text1-div2, #i-epic, #text2-div2{
-        opacity: 1;
-    }
-}
+}*/  
 
 #flower{
     position: absolute;
@@ -130,7 +126,6 @@ html {
     right: 0;
     margin-top: 10vh;
     margin-right: 14vw;
-    opacity: 1;
     transition-duration: 1000ms;
     transition-delay: 1500ms;
 }
@@ -206,15 +201,15 @@ html {
 
 #fourthDiv{
     //box-shadow: 20px 20px 50px 50px rgb(185, 185, 185);
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-color: black;
     position: absolute;
     overflow: visible;
 }
     #back-to-top{
-        width: 40px;
-        height: 40px;
+        width: 4rem;
+        height: 4rem;
         background-color: rgba(198, 186, 171, 0.465);
         //float: left;
         left: 0;
@@ -223,7 +218,7 @@ html {
         //margin-bottom: auto;
         top: 50%;
         opacity: 1;
-        //z-index: 15;
+        z-index: 22;
         overflow-x: visible;
 
         }
@@ -234,14 +229,12 @@ html {
 
 
     #text-content {
-        position: relative;
-        left: -12.5rem;
+        position: absolute;
+        right: 14rem;
         width: 66%;
         height: auto;
-        //align-self: center;
         margin-top: 0;
-        padding: 5rem;
-        padding-top: 2.5rem;
+        padding-top: 12rem;
         padding-bottom: 4rem;
         color: antiquewhite;
         z-index: 15;
@@ -252,23 +245,22 @@ html {
             font-weight: 700;
             margin-bottom: 2rem;
         }
+    }    
         .p-content {
 //            font-size: 4.6ch;
             font-size: 2.2vw;
             padding-left: 15rem;
         }
-    }
+    
 
     #pic-div{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: relative;
-        float: left;
-        top: 22vh;
+        position: absolute;
         left: 2.5vw;
-        //top:2925px;
+        padding-top: 20rem;
         z-index: 20;
     }
 
@@ -293,7 +285,7 @@ html {
 //
 
 //
-.barShrunk {
+/*.barShrunk {
     width: 40px;
     height: 40px;
     background-color: rgba(198, 186, 171, 0.465);
@@ -309,47 +301,261 @@ html {
         height: 40px;
         
     }
-}
+}*/
 
 .contactBar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: 45vw;
     height: auto;
-    //position: sticky;
-    //left: 0;
-    //text-align: right;
-    //padding-top: 7px;
-    transition: 500ms;
-    opacity: 0;
-    font-size: 2.5rem ;
+    //position: absolute;
+    bottom: 0vh;
+    right: 29vw;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+
     .text, .github, .email, .ig {
         //display: inline-block;
-        margin: 0.5 rem 0px;
-        width: fit-content;
-        height: 7rem;
+        margin: 0.5rem 1rem;
+        //width: fit-content;
+        //height: 7rem;
         text-align: center;
       }
       
-      .contactBar .text {
+      /*.contactBar .text {
         //position: relative;
-        top: -1rem;
+        //top: -1rem;
         //font-family: x;
       }
 
       .text {
           margin-bottom: 1rem;
-      }
+      }*/
 }
+
+
+  footer {
+    position: relative;
+    bottom: -100vh;
+    display: flex;
+    background-color: #1F2937;
+    color: white;
+    height: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 29;
+}
+
+footer p {
+margin: auto;
+}
+
+
+///////////////
+
+
+@media only screen and (min-width:768px) {
+    /* For tablets: */
+    #img-first-div{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-right: auto;
+        height: 120vh;
+        z-index: -11;
+        width: 120vw;
+    }
+    
+    #text-box1, #text1-div2, #i-epic, #text2-div2 {
+        opacity: 1;
+    }
+
+    #flower{
+        margin-right: 3vw;
+    }
+
+    #pic-div {
+        overflow: visible;
+    }
+    
+    #epic-pic, #my-pic {
+        height: 30vh;
+        width: 30vw;
+    }
+
+    .p-content {
+        font-size: 3vw;
+    }
+
+    /*.barShrunk {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(198, 186, 171, 0.465);
+        transition: 500ms;
+        float: right;
+        position: sticky;
+        top: 50%;
+        opacity: 1;
+        //overflow-x: visible;
+        overflow-y: hidden;
+        .bar-arrow{
+            width: 40px;
+            height: 40px;
+            
+        }
+    */
+
+    
+
+  }
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    .contactBar {
+        position: absolute;
+        font-size: 2.5rem ;
+        background-color: rgba(240, 248, 255, 0.661);
+        border-radius: 3rem;
+    }
+}
+
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (orientation: landscape) and (max-width: 992px) {
+    /* For tablets: */
+    #img-first-div{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-right: auto;
+        height: 120vh;
+        z-index: -11;
+        width: 120vw;
+    }
+    
+    #text1-div2, #i-epic, #text2-div2 {
+        opacity: 1;
+    }
+
+    #flower{
+        margin-right: 3vw;
+    }
+
+    #pic-div {
+        overflow: visible;
+    }
+    
+    #epic-pic, #my-pic {
+        height: 30vh;
+        width: 30vw;
+    }
+
+    .contactBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 7vh;
+        position: absolute;
+        bottom: 0vh;
+      right: 26vw;
+      padding-top: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 2.5rem ;
+      background-color: rgba(240, 248, 255, 0.661);
+      border-radius: 3rem;
+      opacity: 1;
+      .text, .github, .email, .ig {
+          margin: 0.5rem 1rem;
+          text-align: center;
+        }
+  }
+  
+}
+@media only screen and (min-width: 992px){  
+    // for large screens
+    
+    .p-content {
+        font-size: 2.7vw;
+    }
+    
+    #text1-div2, #i-epic, #text2-div2 {
+        opacity: 0;
+    }
+
+    #secondDiv:hover{
+        #text1-div2, #i-epic, #text2-div2{
+            opacity: 1;
+        }
+    } 
+
+    .barShrunk {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(198, 186, 171, 0.465);
+        transition: 500ms;
+        float: right;
+        position: sticky;
+        top: 50%;
+        opacity: 1;
+        //overflow-x: visible;
+        overflow-y: hidden;
+        .bar-arrow{
+            width: 40px;
+            height: 40px;
+            
+        }
+    }
+    
+    .contactBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: auto;
+        position: static;
+        //position: sticky;
+        //left: 0;
+        //text-align: right;
+        //padding-top: 7px;
+        transition: 500ms;
+        opacity: 0;
+        font-size: 2.5rem ;
+        .text, .github, .email, .ig {
+            //display: inline-block;
+            margin: 0.5 rem 0px;
+            width: fit-content;
+            height: 7rem;
+            text-align: center;
+          }
+          
+          .contactBar .text {
+            //position: relative;
+            top: -1rem;
+            //font-family: x;
+          }
+    
+          .text {
+              margin-bottom: 1rem;
+          }
+    }
 
 .barShrunk:hover {
     padding: 0;
     margin: 0;
     width: 15%;
     height: 50%;
-    background-color: rgba(202, 202, 202, 0.756);
+    //background-color: rgba(202, 202, 202, 0.756);
     //list-style: none;
     display: flex;
     flex-direction: column;
@@ -358,7 +564,7 @@ html {
     //left: 0;
     padding-top: 7px;
     transition: 500ms;
-    border: 10px groove rgba(196, 188, 177, 0.505);
+    //border: 10px groove rgba(196, 188, 177, 0.505);
     z-index: 10;
     opacity: 1;
     overflow-x: visible;
@@ -371,36 +577,16 @@ html {
         overflow-x: visible;
     }
 }
-
-  
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .main {
-      width: 80%;
-      padding: 0;
-    }
-    .right {
-      width: 100%;
-    }
-  }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .menu, .main, .right {
-      width: 100%;
-    }
-  }
-
-  footer {
-    position: static;
-    display: flex;
-    background-color: #1F2937;
-    color: white;
-    height: 100px;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 29;
 }
 
-footer p {
-margin: auto;
+@media only screen and (min-width: 1050px){
+    #text1-div2, #i-epic, #text2-div2 {
+        opacity: 0;
+    }
+
+    #secondDiv:hover{
+        #text1-div2, #i-epic, #text2-div2{
+            opacity: 1;
+        }
+    }  
 }

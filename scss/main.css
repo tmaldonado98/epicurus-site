@@ -10,7 +10,6 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Alegreya', serif;
-  overflow-x: hidden;
 }
 
 #firstDiv {
@@ -77,7 +76,6 @@ html {
 
 #text-box1 #i-epic {
   text-indent: 10rem;
-  opacity: 0;
   -webkit-transition-duration: 1500ms;
           transition-duration: 1500ms;
   -webkit-transition-delay: 1500ms;
@@ -88,7 +86,6 @@ html {
 #text-box1 #text1-div2 {
   padding-top: 10rem;
   margin-left: 5rem;
-  opacity: 0;
   -webkit-transition-duration: 1500ms;
           transition-duration: 1500ms;
   -webkit-transition-delay: 500ms;
@@ -102,7 +99,6 @@ html {
   margin-right: 5rem;
   margin-left: 5rem;
   font-size: 6rem;
-  opacity: 0;
   -webkit-transition-duration: 1500ms;
           transition-duration: 1500ms;
   -webkit-transition-delay: 3000ms;
@@ -126,10 +122,6 @@ html {
         width: 100%;
         
 }*/
-#secondDiv:hover #text1-div2, #secondDiv:hover #i-epic, #secondDiv:hover #text2-div2 {
-  opacity: 1;
-}
-
 #flower {
   position: absolute;
   width: 45vw;
@@ -137,7 +129,6 @@ html {
   right: 0;
   margin-top: 10vh;
   margin-right: 14vw;
-  opacity: 1;
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
   -webkit-transition-delay: 1500ms;
@@ -219,7 +210,7 @@ html {
 }
 
 #fourthDiv {
-  height: 110vh;
+  height: 100vh;
   width: 100%;
   background-color: black;
   position: absolute;
@@ -227,14 +218,15 @@ html {
 }
 
 #back-to-top {
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   background-color: rgba(198, 186, 171, 0.465);
   left: 0;
   position: -webkit-sticky;
   position: sticky;
   top: 50%;
   opacity: 1;
+  z-index: 22;
   overflow-x: visible;
 }
 
@@ -244,13 +236,12 @@ html {
 }
 
 #text-content {
-  position: relative;
-  left: -12.5rem;
+  position: absolute;
+  right: 14rem;
   width: 66%;
   height: auto;
   margin-top: 0;
-  padding: 5rem;
-  padding-top: 2.5rem;
+  padding-top: 12rem;
   padding-bottom: 4rem;
   color: antiquewhite;
   z-index: 15;
@@ -262,7 +253,7 @@ html {
   margin-bottom: 2rem;
 }
 
-#text-content .p-content {
+.p-content {
   font-size: 2.2vw;
   padding-left: 15rem;
 }
@@ -281,10 +272,9 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  float: left;
-  top: 22vh;
+  position: absolute;
   left: 2.5vw;
+  padding-top: 20rem;
   z-index: 20;
 }
 
@@ -299,124 +289,62 @@ html {
   border-radius: 100px;
 }
 
-.barShrunk {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(198, 186, 171, 0.465);
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  float: right;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 50%;
-  opacity: 1;
-  overflow-y: hidden;
-}
-
-.barShrunk .bar-arrow {
-  width: 40px;
-  height: 40px;
-}
-
+/*.barShrunk {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(198, 186, 171, 0.465);
+    transition: 500ms;
+    float: right;
+    position: sticky;
+    top: 50%;
+    opacity: 1;
+    //overflow-x: visible;
+    overflow-y: hidden;
+    .bar-arrow{
+        width: 40px;
+        height: 40px;
+        
+    }
+}*/
 .contactBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 45vw;
   height: auto;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  opacity: 0;
-  font-size: 2.5rem;
+  bottom: 0vh;
+  right: 29vw;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  /*.contactBar .text {
+        //position: relative;
+        //top: -1rem;
+        //font-family: x;
+      }
+
+      .text {
+          margin-bottom: 1rem;
+      }*/
 }
 
 .contactBar .text, .contactBar .github, .contactBar .email, .contactBar .ig {
-  margin: 0.5 rem 0px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 7rem;
+  margin: 0.5rem 1rem;
   text-align: center;
 }
 
-.contactBar .contactBar .text {
-  top: -1rem;
-}
-
-.contactBar .text {
-  margin-bottom: 1rem;
-}
-
-.barShrunk:hover {
-  padding: 0;
-  margin: 0;
-  width: 15%;
-  height: 50%;
-  background-color: rgba(202, 202, 202, 0.756);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 7px;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  border: 10px groove rgba(196, 188, 177, 0.505);
-  z-index: 10;
-  opacity: 1;
-  overflow-x: visible;
-}
-
-.barShrunk:hover .contactBar {
-  opacity: 1;
-  overflow-x: visible;
-}
-
-.barShrunk:hover .bar-arrow {
-  opacity: 0;
-  overflow-x: visible;
-}
-
-@media only screen and (max-width: 800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-
 footer {
-  position: static;
+  position: relative;
+  bottom: -100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,5 +358,232 @@ footer {
 
 footer p {
   margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  #img-first-div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-right: auto;
+    height: 120vh;
+    z-index: -11;
+    width: 120vw;
+  }
+  #text-box1, #text1-div2, #i-epic, #text2-div2 {
+    opacity: 1;
+  }
+  #flower {
+    margin-right: 3vw;
+  }
+  #pic-div {
+    overflow: visible;
+  }
+  #epic-pic, #my-pic {
+    height: 30vh;
+    width: 30vw;
+  }
+  .p-content {
+    font-size: 3vw;
+  }
+  /*.barShrunk {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(198, 186, 171, 0.465);
+        transition: 500ms;
+        float: right;
+        position: sticky;
+        top: 50%;
+        opacity: 1;
+        //overflow-x: visible;
+        overflow-y: hidden;
+        .bar-arrow{
+            width: 40px;
+            height: 40px;
+            
+        }
+    */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .contactBar {
+    position: absolute;
+    font-size: 2.5rem;
+    background-color: rgba(240, 248, 255, 0.661);
+    border-radius: 3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 992px) {
+  /* For tablets: */
+  #img-first-div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-right: auto;
+    height: 120vh;
+    z-index: -11;
+    width: 120vw;
+  }
+  #text1-div2, #i-epic, #text2-div2 {
+    opacity: 1;
+  }
+  #flower {
+    margin-right: 3vw;
+  }
+  #pic-div {
+    overflow: visible;
+  }
+  #epic-pic, #my-pic {
+    height: 30vh;
+    width: 30vw;
+  }
+  .contactBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50vw;
+    height: 7vh;
+    position: absolute;
+    bottom: 0vh;
+    right: 26vw;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 2.5rem;
+    background-color: rgba(240, 248, 255, 0.661);
+    border-radius: 3rem;
+    opacity: 1;
+  }
+  .contactBar .text, .contactBar .github, .contactBar .email, .contactBar .ig {
+    margin: 0.5rem 1rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .p-content {
+    font-size: 2.7vw;
+  }
+  #text1-div2, #i-epic, #text2-div2 {
+    opacity: 0;
+  }
+  #secondDiv:hover #text1-div2, #secondDiv:hover #i-epic, #secondDiv:hover #text2-div2 {
+    opacity: 1;
+  }
+  .barShrunk {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(198, 186, 171, 0.465);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    float: right;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50%;
+    opacity: 1;
+    overflow-y: hidden;
+  }
+  .barShrunk .bar-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .contactBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    position: static;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    opacity: 0;
+    font-size: 2.5rem;
+  }
+  .contactBar .text, .contactBar .github, .contactBar .email, .contactBar .ig {
+    margin: 0.5 rem 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 7rem;
+    text-align: center;
+  }
+  .contactBar .contactBar .text {
+    top: -1rem;
+  }
+  .contactBar .text {
+    margin-bottom: 1rem;
+  }
+  .barShrunk:hover {
+    padding: 0;
+    margin: 0;
+    width: 15%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 7px;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    z-index: 10;
+    opacity: 1;
+    overflow-x: visible;
+  }
+  .barShrunk:hover .contactBar {
+    opacity: 1;
+    overflow-x: visible;
+  }
+  .barShrunk:hover .bar-arrow {
+    opacity: 0;
+    overflow-x: visible;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  #text1-div2, #i-epic, #text2-div2 {
+    opacity: 0;
+  }
+  #secondDiv:hover #text1-div2, #secondDiv:hover #i-epic, #secondDiv:hover #text2-div2 {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
