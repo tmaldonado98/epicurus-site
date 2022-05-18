@@ -10,7 +10,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Alegreya', serif;
-    //overflow-x: hidden;
+    //overflow-y: hidden;
 }
 
 #firstDiv {
@@ -81,7 +81,7 @@ html {
         //opacity: 0;
         transition-duration: 1500ms;
         transition-delay: 1500ms;
-        font-size: 5rem;    
+        //font-size: 5rem;    
         }
         #text1-div2{
             padding-top: 10rem;
@@ -89,15 +89,15 @@ html {
             //opacity: 0;
             transition-duration: 1500ms;
             transition-delay: 500ms;
-            font-size: 5rem;    
+            //font-size: 5rem;    
         }
         #text2-div2{
             text-align: center;
-            margin-top: 11rem;
+            //margin-top: 11rem;
             margin-right: 5rem;
             margin-left: 5rem;
             //padding-bottom: 5rem;
-            font-size: 6rem;
+            //font-size: 6rem;
             //opacity: 0;
             transition-duration: 1500ms;
             transition-delay: 3000ms;
@@ -205,7 +205,7 @@ html {
     width: 100%;
     background-color: black;
     position: absolute;
-    overflow: visible;
+    overflow-y: hidden;
 }
     #back-to-top{
         width: 4rem;
@@ -235,7 +235,7 @@ html {
         height: auto;
         margin-top: 0;
         padding-top: 12rem;
-        padding-bottom: 4rem;
+        //padding-bottom: 4rem;
         color: antiquewhite;
         z-index: 15;
 
@@ -248,7 +248,7 @@ html {
     }    
         .p-content {
 //            font-size: 4.6ch;
-            font-size: 2.2vw;
+            //font-size: 2.2vw;
             padding-left: 15rem;
         }
     
@@ -282,33 +282,14 @@ html {
         //width: 320px;
         border-radius: 100px;
     }
-//
 
-//
-/*.barShrunk {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(198, 186, 171, 0.465);
-    transition: 500ms;
-    float: right;
-    position: sticky;
-    top: 50%;
-    opacity: 1;
-    //overflow-x: visible;
-    overflow-y: hidden;
-    .bar-arrow{
-        width: 40px;
-        height: 40px;
-        
-    }
-}*/
 
 .contactBar {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 45vw;
+    width: 50vw;
     height: auto;
     //position: absolute;
     bottom: 0vh;
@@ -358,16 +339,20 @@ margin: auto;
 
 @media only screen and (min-width:768px) {
     /* For tablets: */
-    #img-first-div{
+    /*8#img-first-div{
         position: absolute;
         bottom: 0;
         left: 0;
         margin-right: auto;
-        height: 120vh;
+        height: 100vh;
         z-index: -11;
-        width: 120vw;
-    }
+        width: 100vw;
+    }*/
     
+    #text2-div2 {
+        margin-top: 11rem;
+    }
+
     #text-box1, #text1-div2, #i-epic, #text2-div2 {
         opacity: 1;
     }
@@ -386,48 +371,32 @@ margin: auto;
     }
 
     .p-content {
-        font-size: 3vw;
+        font-size: 2.4rem;
     }
 
-    /*.barShrunk {
-        width: 40px;
-        height: 40px;
-        background-color: rgba(198, 186, 171, 0.465);
-        transition: 500ms;
-        float: right;
-        position: sticky;
-        top: 50%;
-        opacity: 1;
-        //overflow-x: visible;
-        overflow-y: hidden;
-        .bar-arrow{
-            width: 40px;
-            height: 40px;
-            
-        }
-    */
-
-    
+    .contactBar {
+        font-size: 1.5rem;
+    }
 
   }
 
 @media only screen and (min-width:768px) and (max-width: 992px) {
+    #img-first-div{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-right: auto;
+        height: 110vh;
+        z-index: -11;
+        width: 100vw;
+    }
+    
     .contactBar {
         position: absolute;
-        font-size: 2.5rem ;
-        background-color: rgba(240, 248, 255, 0.661);
+        background-color: rgba(240, 248, 255, 0.74);
         border-radius: 3rem;
     }
 }
-
-
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-
 
 @media only screen and (orientation: landscape) and (max-width: 992px) {
     /* For tablets: */
@@ -481,11 +450,12 @@ margin: auto;
   }
   
 }
+
 @media only screen and (min-width: 992px){  
     // for large screens
     
     .p-content {
-        font-size: 2.7vw;
+        font-size: 2.8rem;
     }
     
     #text1-div2, #i-epic, #text2-div2 {
@@ -499,20 +469,18 @@ margin: auto;
     } 
 
     .barShrunk {
-        width: 40px;
-        height: 40px;
+        width: 4rem;
+        height: 4rem;
         background-color: rgba(198, 186, 171, 0.465);
         transition: 500ms;
         float: right;
         position: sticky;
         top: 50%;
         opacity: 1;
-        //overflow-x: visible;
-        overflow-y: hidden;
+        overflow-x: hidden;
         .bar-arrow{
-            width: 40px;
-            height: 40px;
-            
+            width: 4rem;
+            height: 4rem;
         }
     }
     
@@ -532,7 +500,6 @@ margin: auto;
         opacity: 0;
         font-size: 2.5rem ;
         .text, .github, .email, .ig {
-            //display: inline-block;
             margin: 0.5 rem 0px;
             width: fit-content;
             height: 7rem;
@@ -540,9 +507,7 @@ margin: auto;
           }
           
           .contactBar .text {
-            //position: relative;
             top: -1rem;
-            //font-family: x;
           }
     
           .text {
@@ -555,14 +520,12 @@ margin: auto;
     margin: 0;
     width: 15%;
     height: 50%;
-    //background-color: rgba(202, 202, 202, 0.756);
-    //list-style: none;
+    background-color: rgba(202, 202, 202, 0.842);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //left: 0;
-    padding-top: 7px;
+    padding-top: 0.7rem;
     transition: 500ms;
     //border: 10px groove rgba(196, 188, 177, 0.505);
     z-index: 10;
@@ -574,7 +537,7 @@ margin: auto;
     }
     .bar-arrow{
         opacity: 0;
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 }
 }
@@ -589,4 +552,56 @@ margin: auto;
             opacity: 1;
         }
     }  
+}
+
+@media only screen and (min-width: 1100px){
+    #text1-div2, #i-epic {
+        font-size: 8rem;
+    }
+
+    #text2-div2 {
+        font-size: 9rem;
+    }
+    
+    .p-content {
+        font-size: 3rem;
+    }
+
+    #epic-pic, #my-pic {
+        height: 25vh;
+        width: 25vw;
+    }
+}
+
+@media only screen and (min-width: 1350px){
+    #epic-pic, #my-pic {
+        height: 30vh;
+        width: 23vw;
+    }
+}
+
+@media only screen and (min-width: 1650px){
+    #epic-pic, #my-pic {
+        height: 35vh;
+        width: 23vw;
+    }
+
+    .p-content {
+        font-size: 3.3rem;
+    }
+}
+
+@media only screen and (min-width: 1900px){
+    #text2-div2 {
+        margin-top: 20rem;
+    }
+   
+    #text-content{
+       right: 34rem;
+       width: 56%;
+   }
+}
+
+@media only screen and (min-width: 2000px){
+    
 }

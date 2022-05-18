@@ -80,7 +80,6 @@ html {
           transition-duration: 1500ms;
   -webkit-transition-delay: 1500ms;
           transition-delay: 1500ms;
-  font-size: 5rem;
 }
 
 #text-box1 #text1-div2 {
@@ -90,15 +89,12 @@ html {
           transition-duration: 1500ms;
   -webkit-transition-delay: 500ms;
           transition-delay: 500ms;
-  font-size: 5rem;
 }
 
 #text-box1 #text2-div2 {
   text-align: center;
-  margin-top: 11rem;
   margin-right: 5rem;
   margin-left: 5rem;
-  font-size: 6rem;
   -webkit-transition-duration: 1500ms;
           transition-duration: 1500ms;
   -webkit-transition-delay: 3000ms;
@@ -214,7 +210,7 @@ html {
   width: 100%;
   background-color: black;
   position: absolute;
-  overflow: visible;
+  overflow-y: hidden;
 }
 
 #back-to-top {
@@ -242,7 +238,6 @@ html {
   height: auto;
   margin-top: 0;
   padding-top: 12rem;
-  padding-bottom: 4rem;
   color: antiquewhite;
   z-index: 15;
 }
@@ -254,7 +249,6 @@ html {
 }
 
 .p-content {
-  font-size: 2.2vw;
   padding-left: 15rem;
 }
 
@@ -289,23 +283,6 @@ html {
   border-radius: 100px;
 }
 
-/*.barShrunk {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(198, 186, 171, 0.465);
-    transition: 500ms;
-    float: right;
-    position: sticky;
-    top: 50%;
-    opacity: 1;
-    //overflow-x: visible;
-    overflow-y: hidden;
-    .bar-arrow{
-        width: 40px;
-        height: 40px;
-        
-    }
-}*/
 .contactBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,7 +297,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 45vw;
+  width: 50vw;
   height: auto;
   bottom: 0vh;
   right: 29vw;
@@ -362,14 +339,17 @@ footer p {
 
 @media only screen and (min-width: 768px) {
   /* For tablets: */
-  #img-first-div {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-right: auto;
-    height: 120vh;
-    z-index: -11;
-    width: 120vw;
+  /*8#img-first-div{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-right: auto;
+        height: 100vh;
+        z-index: -11;
+        width: 100vw;
+    }*/
+  #text2-div2 {
+    margin-top: 11rem;
   }
   #text-box1, #text1-div2, #i-epic, #text2-div2 {
     opacity: 1;
@@ -385,40 +365,27 @@ footer p {
     width: 30vw;
   }
   .p-content {
-    font-size: 3vw;
+    font-size: 2.4rem;
   }
-  /*.barShrunk {
-        width: 40px;
-        height: 40px;
-        background-color: rgba(198, 186, 171, 0.465);
-        transition: 500ms;
-        float: right;
-        position: sticky;
-        top: 50%;
-        opacity: 1;
-        //overflow-x: visible;
-        overflow-y: hidden;
-        .bar-arrow{
-            width: 40px;
-            height: 40px;
-            
-        }
-    */
+  .contactBar {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  #img-first-div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-right: auto;
+    height: 110vh;
+    z-index: -11;
+    width: 100vw;
+  }
   .contactBar {
     position: absolute;
-    font-size: 2.5rem;
-    background-color: rgba(240, 248, 255, 0.661);
+    background-color: rgba(240, 248, 255, 0.74);
     border-radius: 3rem;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
   }
 }
 
@@ -480,7 +447,7 @@ footer p {
 
 @media only screen and (min-width: 992px) {
   .p-content {
-    font-size: 2.7vw;
+    font-size: 2.8rem;
   }
   #text1-div2, #i-epic, #text2-div2 {
     opacity: 0;
@@ -489,8 +456,8 @@ footer p {
     opacity: 1;
   }
   .barShrunk {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     background-color: rgba(198, 186, 171, 0.465);
     -webkit-transition: 500ms;
     transition: 500ms;
@@ -499,11 +466,11 @@ footer p {
     position: sticky;
     top: 50%;
     opacity: 1;
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
   .barShrunk .bar-arrow {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
   }
   .contactBar {
     display: -webkit-box;
@@ -548,6 +515,7 @@ footer p {
     margin: 0;
     width: 15%;
     height: 50%;
+    background-color: rgba(202, 202, 202, 0.842);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -561,7 +529,7 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 7px;
+    padding-top: 0.7rem;
     -webkit-transition: 500ms;
     transition: 500ms;
     z-index: 10;
@@ -574,7 +542,7 @@ footer p {
   }
   .barShrunk:hover .bar-arrow {
     opacity: 0;
-    overflow-x: visible;
+    overflow-x: hidden;
   }
 }
 
@@ -584,6 +552,49 @@ footer p {
   }
   #secondDiv:hover #text1-div2, #secondDiv:hover #i-epic, #secondDiv:hover #text2-div2 {
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #text1-div2, #i-epic {
+    font-size: 8rem;
+  }
+  #text2-div2 {
+    font-size: 9rem;
+  }
+  .p-content {
+    font-size: 3rem;
+  }
+  #epic-pic, #my-pic {
+    height: 25vh;
+    width: 25vw;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  #epic-pic, #my-pic {
+    height: 30vh;
+    width: 23vw;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  #epic-pic, #my-pic {
+    height: 35vh;
+    width: 23vw;
+  }
+  .p-content {
+    font-size: 3.3rem;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  #text2-div2 {
+    margin-top: 20rem;
+  }
+  #text-content {
+    right: 34rem;
+    width: 56%;
   }
 }
 /*# sourceMappingURL=main.css.map */
