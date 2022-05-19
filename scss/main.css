@@ -49,8 +49,6 @@ html {
 }
 
 #secondDiv {
-  -webkit-box-shadow: 20px 20px 50px 50px #c2c2c2;
-          box-shadow: 20px 20px 50px 50px #c2c2c2;
   height: 100vh;
   width: 100%;
   background-color: black;
@@ -132,8 +130,6 @@ html {
 }
 
 #thirdDiv {
-  -webkit-box-shadow: 20px 20px 50px 50px #b9b9b9;
-          box-shadow: 20px 20px 50px 50px #b9b9b9;
   height: 100vh;
   width: 100%;
 }
@@ -467,6 +463,7 @@ footer p {
     top: 50%;
     opacity: 1;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   .barShrunk .bar-arrow {
     width: 4rem;
