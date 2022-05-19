@@ -15,6 +15,8 @@ html {
 #firstDiv {
   height: 100vh;
   width: 100%;
+  -webkit-box-shadow: 20px 20px 50px 50px #b9b9b9;
+          box-shadow: 20px 20px 50px 50px #b9b9b9;
   background-attachment: fixed;
 }
 
@@ -45,10 +47,13 @@ html {
   left: 0;
   margin-right: auto;
   height: 100vh;
+  width: 100%;
   z-index: -11;
 }
 
 #secondDiv {
+  -webkit-box-shadow: 20px 20px 50px 50px #c2c2c2;
+          box-shadow: 20px 20px 50px 50px #c2c2c2;
   height: 100vh;
   width: 100%;
   background-color: black;
@@ -130,6 +135,8 @@ html {
 }
 
 #thirdDiv {
+  -webkit-box-shadow: 20px 20px 50px 50px #b9b9b9;
+          box-shadow: 20px 20px 50px 50px #b9b9b9;
   height: 100vh;
   width: 100%;
 }
@@ -202,6 +209,8 @@ html {
 }
 
 #fourthDiv {
+  -webkit-box-shadow: 20px 20px 50px 50px #b9b9b9;
+          box-shadow: 20px 20px 50px 50px #b9b9b9;
   height: 100vh;
   width: 100%;
   background-color: black;
