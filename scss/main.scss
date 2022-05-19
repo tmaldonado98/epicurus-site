@@ -79,29 +79,15 @@ html {
         text-align: justify;
         #i-epic {
         text-indent: 10rem;
-        //opacity: 0;
-        transition-duration: 1500ms;
-        transition-delay: 1500ms;
-        //font-size: 5rem;    
         }
         #text1-div2{
             padding-top: 10rem;
             margin-left: 5rem;
-            //opacity: 0;
-            transition-duration: 1500ms;
-            transition-delay: 500ms;
-            //font-size: 5rem;    
         }
         #text2-div2{
             text-align: center;
-            //margin-top: 11rem;
             margin-right: 5rem;
             margin-left: 5rem;
-            //padding-bottom: 5rem;
-            //font-size: 6rem;
-            //opacity: 0;
-            transition-duration: 1500ms;
-            transition-delay: 3000ms;
         }
     }
 
@@ -176,6 +162,8 @@ html {
             //margin-right: 50px;
             padding: 1rem;
             text-align: center;
+            height: 10vh;
+            align-items: center;
             
             a{
             text-decoration: none;
@@ -337,33 +325,42 @@ margin: auto;
 
 ///////////////
 
+@media only screen and (min-width: 400px){
+    #text1-div2 {
+        //margin-top: 5rem;
+    }
+    
+    #text1-div2, #i-epic {
+        font-size: 5vw;
+    }
+
+    #text2-div2 {
+        margin-top: 5rem;
+        font-size: 5rem;
+        margin-top: 25rem;
+    }
+
+    #flower {
+        margin-top: 33rem; 
+    }
+}
 
 @media only screen and (min-width:768px) {
     /* For tablets: */
-    /*8#img-first-div{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin-right: auto;
-        height: 100vh;
-        z-index: -11;
-        width: 100vw;
-    }*/
     
-    #text2-div2 {
-        margin-top: 11rem;
+    #text1-div2, #i-epic {
+        font-size: 5rem;
     }
 
-    #text-box1, #text1-div2, #i-epic, #text2-div2 {
-        opacity: 1;
+    #text2-div2 {
+        margin-top: 11rem;
+        font-size: 7rem;
+        margin-top: 15rem;
     }
 
     #flower{
         margin-right: 3vw;
-    }
-
-    #pic-div {
-        overflow: visible;
+        margin-top: 20rem; 
     }
     
     #epic-pic, #my-pic {
@@ -381,53 +378,7 @@ margin: auto;
 
   }
 
-@media only screen and (min-width:768px) and (max-width: 992px) {
-    #img-first-div{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin-right: auto;
-        height: 110vh;
-        z-index: -11;
-        width: 100vw;
-    }
-    
-    .contactBar {
-        position: absolute;
-        background-color: rgba(240, 248, 255, 0.74);
-        border-radius: 3rem;
-    }
-}
-
-@media only screen and (orientation: landscape) and (max-width: 992px) {
-    /* For tablets: */
-    #img-first-div{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin-right: auto;
-        height: 120vh;
-        z-index: -11;
-        width: 120vw;
-    }
-    
-    #text1-div2, #i-epic, #text2-div2 {
-        opacity: 1;
-    }
-
-    #flower{
-        margin-right: 3vw;
-    }
-
-    #pic-div {
-        overflow: visible;
-    }
-    
-    #epic-pic, #my-pic {
-        height: 30vh;
-        width: 30vw;
-    }
-
+/*@media only screen and (min-width:768px) and (max-width: 992px) {   
     .contactBar {
         display: flex;
         flex-direction: row;
@@ -449,8 +400,8 @@ margin: auto;
           text-align: center;
         }
   }
-  
-}
+}   */
+    
 
 @media only screen and (min-width: 992px){  
     // for large screens
@@ -459,6 +410,65 @@ margin: auto;
         font-size: 2.8rem;
     }
     
+    /*.contactBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 7vh;
+        position: absolute;
+        bottom: 0vh;
+      right: 26vw;
+      padding-top: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 2.5rem ;
+      background-color: rgba(240, 248, 255, 0.661);
+      border-radius: 3rem;
+      opacity: 1;
+      .text, .github, .email, .ig {
+          margin: 0.5rem 1rem;
+          text-align: center;
+        }
+  }*/
+
+  #text1-div2, #i-epic {
+    font-size: 8rem;
+    }
+
+    #text2-div2 {
+        margin-top: 11rem;
+        font-size: 9rem;
+        margin-top: 15rem;
+    }
+}
+
+@media only screen and (min-width: 1050px){
+    /*#text1-div2, #i-epic, #text2-div2 {
+        opacity: 0;
+    }
+
+    #secondDiv:hover{
+        #text1-div2, #i-epic, #text2-div2{
+            opacity: 1;
+        }
+    } */ 
+}
+
+@media only screen and (min-width: 1100px){
+    
+    
+    .p-content {
+        font-size: 2.9rem;
+    }
+
+    #epic-pic, #my-pic {
+        height: 25vh;
+        width: 25vw;
+    }
+}
+
+@media only screen and (min-width: 1350px){
     #text1-div2, #i-epic, #text2-div2 {
         opacity: 0;
     }
@@ -468,6 +478,30 @@ margin: auto;
             opacity: 1;
         }
     } 
+
+    #i-epic {
+        transition-duration: 1500ms;
+        transition-delay: 1500ms;
+    }
+    
+    #text1-div2{
+        transition-duration: 1500ms;
+        transition-delay: 500ms;
+    }
+
+    #text2-div2{
+        transition-duration: 1500ms;
+        transition-delay: 3000ms;
+    }
+    
+    #epic-pic, #my-pic {
+        height: 30vh;
+        width: 23vw;
+    }
+
+    .p-content {
+        font-size: 3rem;
+    }
 
     .barShrunk {
         width: 4rem;
@@ -494,10 +528,6 @@ margin: auto;
         width: fit-content;
         height: auto;
         position: static;
-        //position: sticky;
-        //left: 0;
-        //text-align: right;
-        //padding-top: 7px;
         transition: 500ms;
         opacity: 0;
         font-size: 2.5rem ;
@@ -522,7 +552,7 @@ margin: auto;
     margin: 0;
     width: 15%;
     height: 50%;
-    background-color: rgba(202, 202, 202, 0.842);
+    background-color: rgba(240, 248, 255, 0.661);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -544,44 +574,6 @@ margin: auto;
 }
 }
 
-@media only screen and (min-width: 1050px){
-    #text1-div2, #i-epic, #text2-div2 {
-        opacity: 0;
-    }
-
-    #secondDiv:hover{
-        #text1-div2, #i-epic, #text2-div2{
-            opacity: 1;
-        }
-    }  
-}
-
-@media only screen and (min-width: 1100px){
-    #text1-div2, #i-epic {
-        font-size: 8rem;
-    }
-
-    #text2-div2 {
-        font-size: 9rem;
-    }
-    
-    .p-content {
-        font-size: 3rem;
-    }
-
-    #epic-pic, #my-pic {
-        height: 25vh;
-        width: 25vw;
-    }
-}
-
-@media only screen and (min-width: 1350px){
-    #epic-pic, #my-pic {
-        height: 30vh;
-        width: 23vw;
-    }
-}
-
 @media only screen and (min-width: 1650px){
     #epic-pic, #my-pic {
         height: 35vh;
@@ -590,6 +582,10 @@ margin: auto;
 
     .p-content {
         font-size: 3.3rem;
+    }
+
+    #flower{
+        margin-top: 10rem; 
     }
 }
 
